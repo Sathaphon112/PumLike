@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+	<title>PayApp - Finance, Banking, Wallet, Crypto Mobile PWA</title>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="manifest" href="_manifest.json">
+	<meta id="theme-check" name="theme-color" content="#FFFFFF">
+	<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+	<div id="preloader">
+		<div class="spinner-border color-highlight" role="status"></div>
+	</div>
+
+	<!-- Page Wrapper-->
+	<div id="page">
+
+		<!-- Footer Bar -->
+		<div id="footer-bar" class="footer-bar-1 footer-bar-detached">
+			<a href="page-wallet.html"><i class="bi bi-wallet2"></i><span>กระเป๋าเงิน</span></a>
+			<a href="page-activity.html"><i class="bi bi-graph-up"></i><span>สถานะกิจกรรม</span></a>
+			<a href="index.html" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
+			<a href="page-payments.html"><i class="bi bi-receipt"></i><span>โปรโมรชั่น</span></a>
+			<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i
+					class="bi bi-three-dots"></i><span>Setting</span></a>
+		</div>
+
+		<!-- Header Bar-->
+		<div class="header-bar header-fixed header-app header-auto-show">
+			<a href="#" data-back-button><i class="bi bi-chevron-left font-13"></i></a>
+			<a href="#" class="header-title">Back to Components</a>
+			<a href="#" data-toggle-theme class="show-on-theme-dark"><i
+					class="bi bi-sun-fill color-yellow-dark font-16"></i>
+				<a href="#" data-toggle-theme class="show-on-theme-light"><i class="bi bi-moon-fill font-13"></i>
+					<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i
+							class="font-16 bi bi-list"></i></a>
+		</div>
+
+		<!-- Page Content - Only Page Elements Here-->
+		<div class="page-content footer-clear">
+
+			<!-- Page Title-->
+			<div class="pt-3">
+				<div class="page-title d-flex">
+					<div class="align-self-center">
+						<a href="#" data-back-button class="me-3 ms-0 icon icon-xxs bg-theme rounded-s shadow-m">
+							<i class="bi bi-chevron-left color-theme font-14"></i>
+						</a>
+					</div>
+					<div class="align-self-center me-auto">
+						<h1 class="color-theme mb-0 font-18">เติมเงิน</h1>
+					</div>
+					<div class="align-self-center ms-auto">
+						<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"
+							class="icon icon-xxs gradient-highlight color-white shadow-bg shadow-bg-xs rounded-s">
+							<i class="bi bi-list font-20"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-6">
+					<div class="logo10">
+						<div class="content mb-0">
+							<div class="d-flex">
+								<div class="align-self-center">
+									<h3 class="font-16 mb-2">เติมเงินผ่านธนาคาร</h3>
+								</div>
+								<div class="align-self-center ms-auto">
+								</div>
+							</div>
+						</div>
+						<div class="card card-style">
+							<div class="content">
+
+								<div class="tabs tabs-icons" id="tab-group-3">
+									<div class="tab-controls">
+										<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/kbank.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">กสิกรไทย</span>
+										</a>
+
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/scb.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">ไทยพาณิชย์</span>
+										</a>
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/ktb.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">กรุงไทย</span>
+										</a>
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/bbl.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">กรุงเทพ</span>
+										</a>
+									</div>
+								</div>
+								<div class="tabs tabs-icons mt-4" id="tab-group-3">
+									<div class="tab-controls">
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/gsb.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">ออมสิน</span>
+										</a>
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/ttb.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">ทีทีบี</span>
+										</a>
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/bay.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">กรุงศรี</span>
+										</a>
+										<a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-transfer">
+											<img src="Assets\images\icon/wallet.png" class="d-inline-block rounded-l" width="40"
+												alt="">
+											<span class="font-10 opacity-70">วอลเล็ต</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+		<!-- End of Page Content-->
+
+		<!-- Off Canvas and Menu Elements-->
+		<!-- Always outside the Page Content-->
+
+		<!-- Main Sidebar Menu -->
+
+
+
+		<div id="menu-transfer" data-menu-load="menu-transfer.html"
+			class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+		</div>
+
+		
+	</div>
+	<!-- End of Page ID-->
+
+	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/custom.js"></script>
+</body>
